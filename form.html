@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Account</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+      width: 600px;
+      margin: auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    .form-container label {
+      display: inline-block;
+      width: 150px;
+      vertical-align: top;
+    }
+
+    .form-container input, .form-container select {
+      width: 200px;
+      margin-bottom: 10px;
+    }
+
+    .error {
+      color: hotpink;
+      font-size: 0.9em;
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    .form-buttons {
+      margin-left: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Register Account</h2>
+    <form>
+      <label>Full Name</label>
+      <input type="text" value="as" disabled>
+      <span class="error">User name must be at least 4 characters</span><br>
+
+      <label>Password</label>
+      <input type="password" value=".." disabled>
+      <span class="error">Password must be at least 4 characters</span><br>
+
+      <label>Confirm Password</label>
+      <input type="password" value="....." disabled>
+<span class="error">Passwords do not match</span><br>
+
+      <label>Email</label>
+      <input type="text" value="john@gmail" disabled>
+      <span class="error">Invalid email format</span><br>
+
+      <label>Phone Number</label>
+      <input type="text" value="1111111111111" disabled>
+      <span class="error">Invalid phone number</span><br>
+
+      <label>Zip Code</label>
+      <input type="text" value="1111111111111"disabled>
+      <span class="error">Invalid Zip Code</span><br>
+
+      <label>Card Type</label>
+      <select>
+        <option>Visa</option>
+        <option>MasterCard</option>
+        <option>AmEx</option>
+ </select><br>
+
+      <label>Card Number</label>
+      <input type="text" value="1111111111111111" disabled>
+      <span class="error">Invalid card number format</span><br>
+
+      <label>Expiration Date</label>
+      <input type="text" value="YYYY-MM-DD" disabled>
+      <span class="error">Invalid date format</span><br>
+
+      <div class="form-buttons">
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
